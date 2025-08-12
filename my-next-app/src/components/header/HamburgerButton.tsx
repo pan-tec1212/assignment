@@ -7,7 +7,7 @@ import { useState } from "react";
  * ハンバーガーメニューのボタン
  * @returns
  */
-export const HamburgerButton = () => {
+export const HamburgerButton = ({ className }: { className?: string }) => {
   const [open, setOpen] = useState<boolean>(false);
   /**
    * 線のベースコンポーネント
@@ -30,7 +30,8 @@ export const HamburgerButton = () => {
         setOpen((prev) => !prev);
       }}
       className={clsx(
-        "relative w-8 h-8 flex flex-col justify-center items-center gap-1"
+        "relative w-8 h-8 flex flex-col justify-center items-center gap-1",
+        className
       )}
     >
       <Line className={clsx(open ? "translate-y-1.5 rotate-45" : "")} />
