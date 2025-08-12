@@ -11,6 +11,7 @@ export const Header = ({ className }: { className?: string }) => {
   return (
     <div
       className={clsx(
+        "absolute w-full",
         "flex items-center justify-between h-15 pl-4 pr-5 shadow-lg",
         className
       )}
