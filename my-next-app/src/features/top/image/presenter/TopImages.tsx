@@ -7,8 +7,8 @@ export const TopImages = ({ className }: { className?: string }) => {
     <div className={clsx("", className)}>
       <Image
         src={"/top/main/kv_img-01.jpg"}
-        width={300}
-        height={300}
+        width={1600}
+        height={900}
         className="w-full px-2 object-cover"
         alt="kv_img-01"
       />

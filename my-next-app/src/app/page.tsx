@@ -1,4 +1,5 @@
 import { TopImages } from "@/features/top/image/presenter/TopImages";
+import { Schedule } from "@/features/top/schedule/container/Schedule";
 
 export default function Home() {
   return (
@@ -7,6 +8,7 @@ export default function Home() {
         {/* トップ画像 */}
         <TopImages />
         {/* スケジュール */}
+        <Schedule />
         {/* インフォメーション */}
         {/* トピックス */}
         {/* 法人の方へ */}
